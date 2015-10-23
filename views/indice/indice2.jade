@@ -1,0 +1,2982 @@
+//
+   Created by urtasun on 19/10/15.
+doctype html
+//
+  Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.4
+  Version: 3.8.0
+  Author: KeenThemes
+  Website: http://www.keenthemes.com/
+  Contact: support@keenthemes.com
+  Follow: www.twitter.com/keenthemes
+  Like: www.facebook.com/keenthemes
+  Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+  License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+//if IE 8
+  html.ie8.no-js(lang='en')
+//if IE 9
+  html.ie9.no-js(lang='en')
+// [if !IE] <!
+html(lang='en')
+   // <![endif]
+   // BEGIN HEAD
+   head
+      meta(charset='utf-8')
+      title Metronic | Page Layouts - Dashboard & Mega Menu
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(content='width=device-width, initial-scale=1.0', name='viewport')
+      meta(http-equiv='Content-type', content='text/html; charset=utf-8')
+      meta(content='', name='description')
+      meta(content='', name='author')
+      // BEGIN GLOBAL MANDATORY STYLES
+      link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all', rel='stylesheet', type='text/css')
+      link(href='../../assets/global/plugins/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+      link(href='../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css', rel='stylesheet', type='text/css')
+      link(href='../../assets/global/plugins/bootstrap/css/bootstrap.min.css', rel='stylesheet', type='text/css')
+      link(href='../../assets/global/plugins/uniform/css/uniform.default.css', rel='stylesheet', type='text/css')
+      link(href='../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css', rel='stylesheet', type='text/css')
+      // END GLOBAL MANDATORY STYLES
+      // BEGIN PAGE LEVEL PLUGIN STYLES
+      link(href='../../assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css', rel='stylesheet', type='text/css')
+      link(href='../../assets/global/plugins/fullcalendar/fullcalendar.min.css', rel='stylesheet', type='text/css')
+      link(href='../../assets/global/plugins/jqvmap/jqvmap/jqvmap.css', rel='stylesheet', type='text/css')
+      // END PAGE LEVEL PLUGIN STYLES
+      // BEGIN PAGE STYLES
+      link(href='../../assets/admin/pages/css/tasks.css', rel='stylesheet', type='text/css')
+      // END PAGE STYLES
+      // BEGIN THEME STYLES
+      link#style_components(href='../../assets/global/css/components.css', rel='stylesheet', type='text/css')
+      link(href='../../assets/global/css/plugins.css', rel='stylesheet', type='text/css')
+      link(href='../../assets/admin/layout/css/layout.css', rel='stylesheet', type='text/css')
+      link#style_color(href='../../assets/admin/layout/css/themes/darkblue.css', rel='stylesheet', type='text/css')
+      link(href='../../assets/admin/layout/css/custom.css', rel='stylesheet', type='text/css')
+      // END THEME STYLES
+      link(rel='shortcut icon', href='favicon.ico')
+   // END HEAD
+   // BEGIN BODY
+   // DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices
+   // DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default
+   // DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle
+   // DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle
+   // DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle
+   // DOC: Apply "page-sidebar-fixed" class to have fixed sidebar
+   // DOC: Apply "page-footer-fixed" class to the body element to have fixed footer
+   // DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side
+   // DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu
+   body.page-header-fixed.page-quick-sidebar-over-content.page-full-width
+      // BEGIN HEADER
+      .page-header.navbar.navbar-fixed-top
+         // BEGIN HEADER INNER
+         .page-header-inner
+            // BEGIN LOGO
+            .page-logo
+               a(href='index.html')
+                  img.logo-default(src='../../assets/admin/layout/img/logo.png', alt='logo')
+            // END LOGO
+            // BEGIN HORIZANTAL MENU
+            // DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background
+            // DOC: This is desktop version of the horizontal menu. The mobile version is defined(duplicated) sidebar menu below. So the horizontal menu has 2 seperate versions
+            .hor-menu.hidden-sm.hidden-xs
+               ul.nav.navbar-nav
+                  // DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover
+                  li.classic-menu-dropdown.active
+                     a(href='index.html')
+                        | Dashboard
+                        span.selected
+                  li.mega-menu-dropdown
+                     a.dropdown-toggle(data-toggle='dropdown', href='javascript:;', data-hover='megamenu-dropdown', data-close-others='true')
+                        | Mega
+                        i.fa.fa-angle-down
+                     ul.dropdown-menu(style='min-width: 700px;')
+                        li
+                           // Content container to add padding
+                           .mega-menu-content
+                              .row
+                                 .col-md-4
+                                    ul.mega-menu-submenu
+                                       li
+                                          h3 Layouts
+                                       li
+                                          a(href='index_horizontal_menu.html')
+                                             | Dashboard & Mega Menu
+                                       li
+                                          a(href='layout_horizontal_sidebar_menu.html')
+                                             | Horizontal & Sidebar Menu
+                                       li
+                                          a(href='layout_fontawesome_icons.html')
+                                             | Layout with Fontawesome
+                                       li
+                                          a(href='layout_glyphicons.html')
+                                             | Layout with Glyphicon
+                                       li
+                                          a(href='layout_full_height_portlet.html')
+                                             | Full Height Portlet
+                                             span.badge.badge-roundless.badge-danger new
+                                       li
+                                          a(href='layout_full_height_content.html')
+                                             | Full Height Content
+                                             span.badge.badge-roundless.badge-warning new
+                                       li
+                                          a(href='layout_horizontal_menu1.html')
+                                             | Horizontal Mega Menu 1
+                                 .col-md-4
+                                    ul.mega-menu-submenu
+                                       li
+                                          h3 More Layouts
+                                       li
+                                          a(href='layout_horizontal_menu2.html')
+                                             | Horizontal Mega Menu 2
+                                       li
+                                          a(href='layout_search_on_header1.html')
+                                             | Search Box On Header 1
+                                       li
+                                          a(href='layout_search_on_header2.html')
+                                             | Search Box On Header 2
+                                       li
+                                          a(href='layout_sidebar_search_option1.html')
+                                             | Sidebar Search Option 1
+                                       li
+                                          a(href='layout_sidebar_search_option2.html')
+                                             | Sidebar Search Option 2
+                                       li
+                                          a(href='layout_sidebar_reversed.html')
+                                             | Right Sidebar Page
+                                       li
+                                          a(href='layout_sidebar_fixed.html')
+                                             | Sidebar Fixed Page
+                                 .col-md-4
+                                    ul.mega-menu-submenu
+                                       li
+                                          h3 Even More!
+                                       li
+                                          a(href='layout_sidebar_closed.html')
+                                             | Sidebar Closed Page
+                                       li
+                                          a(href='layout_ajax.html')
+                                             | Content Loading via Ajax
+                                       li
+                                          a(href='layout_disabled_menu.html')
+                                             | Disabled Menu Links
+                                       li
+                                          a(href='layout_blank_page.html')
+                                             | Blank Page
+                                       li
+                                          a(href='layout_boxed_page.html')
+                                             | Boxed Page
+                                       li
+                                          a(href='layout_language_bar.html')
+                                             | Language Switch Bar
+                  li.mega-menu-dropdown.mega-menu-full
+                     a.dropdown-toggle(data-toggle='dropdown', href='javascript:;', data-hover='megamenu-dropdown', data-close-others='true')
+                        | Full Mega
+                        i.fa.fa-angle-down
+                     ul.dropdown-menu
+                        li
+                           // Content container to add padding
+                           .mega-menu-content
+                              .row
+                                 .col-md-8
+                                    .row
+                                       .col-md-4
+                                          ul.mega-menu-submenu
+                                             li
+                                                h3 Layouts
+                                             li
+                                                a(href='index_horizontal_menu.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Dashboard & Mega Menu
+                                             li
+                                                a(href='layout_horizontal_sidebar_menu.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Horizontal & Sidebar Menu
+                                             li
+                                                a(href='layout_fontawesome_icons.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Layout with Fontawesome
+                                             li
+                                                a(href='layout_glyphicons.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Layout with Glyphicon
+                                             li
+                                                a(href='layout_full_height_portlet.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Full Height Portlet
+                                                   span.badge.badge-roundless.badge-danger new
+                                             li
+                                                a(href='layout_full_height_content.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Full Height Content
+                                                   span.badge.badge-roundless.badge-warning new
+                                             li
+                                                a(href='layout_horizontal_menu1.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Horizontal Mega Menu 1
+                                       .col-md-4
+                                          ul.mega-menu-submenu
+                                             li
+                                                h3 More Layouts
+                                             li
+                                                a(href='layout_horizontal_menu2.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Horizontal Mega Menu 2
+                                             li
+                                                a(href='layout_search_on_header1.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Search Box On Header 1
+                                             li
+                                                a(href='layout_search_on_header2.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Search Box On Header 2
+                                             li
+                                                a(href='layout_sidebar_search_option1.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Sidebar Search Option 1
+                                             li
+                                                a(href='layout_sidebar_search_option2.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Sidebar Search Option 2
+                                             li
+                                                a(href='layout_sidebar_reversed.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Right Sidebar Page
+                                             li
+                                                a(href='layout_sidebar_fixed.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Sidebar Fixed Page
+                                       .col-md-4
+                                          ul.mega-menu-submenu
+                                             li
+                                                h3 Even More!
+                                             li
+                                                a(href='layout_sidebar_closed.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Sidebar Closed Page
+                                             li
+                                                a(href='layout_ajax.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Content Loading via Ajax
+                                             li
+                                                a(href='layout_disabled_menu.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Disabled Menu Links
+                                             li
+                                                a(href='layout_blank_page.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Blank Page
+                                             li
+                                                a(href='layout_boxed_page.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Boxed Page
+                                             li
+                                                a(href='layout_language_bar.html')
+                                                   i.fa.fa-angle-right
+                                                   |  Language Switch Bar
+                                 .col-md-4
+                                    #accordion.panel-group
+                                       .panel.panel-success
+                                          .panel-heading
+                                             h4.panel-title
+                                                a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
+                                                   | Mega Menu Info #1
+                                          #collapseOne.panel-collapse.in
+                                             .panel-body
+                                                | Metronic Mega Menu Works for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
+                                       .panel.panel-danger
+                                          .panel-heading
+                                             h4.panel-title
+                                                a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
+                                                   | Mega Menu Info #2
+                                          #collapseTwo.panel-collapse.collapse
+                                             .panel-body
+                                                | Metronic Mega Menu Works for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
+                                       .panel.panel-info
+                                          .panel-heading
+                                             h4.panel-title
+                                                a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+                                                   | Mega Menu Info #3
+                                          #collapseThree.panel-collapse.collapse
+                                             .panel-body
+                                                | Metronic Mega Menu Works for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
+                  li.classic-menu-dropdown
+                     a(data-toggle='dropdown', href='javascript:;', data-hover='megamenu-dropdown', data-close-others='true')
+                        | Classic
+                        i.fa.fa-angle-down
+                     ul.dropdown-menu.pull-left
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-bookmark-o
+                              |  Section 1
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-user
+                              |  Section 2
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-puzzle-piece
+                              |  Section 3
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-gift
+                              |  Section 4
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-table
+                              |  Section 5
+                        li.dropdown-submenu
+                           a(href='javascript:;')
+                              i.fa.fa-envelope-o
+                              |  More options
+                           ul.dropdown-menu
+                              li
+                                 a(href='javascript:;')
+                                    | Second level link
+                              li.dropdown-submenu
+                                 a(href='javascript:;')
+                                    | More options
+                                 ul.dropdown-menu
+                                    li
+                                       a(href='index.html')
+                                          | Third level link
+                                    li
+                                       a(href='index.html')
+                                          | Third level link
+                                    li
+                                       a(href='index.html')
+                                          | Third level link
+                                    li
+                                       a(href='index.html')
+                                          | Third level link
+                                    li
+                                       a(href='index.html')
+                                          | Third level link
+                              li
+                                 a(href='index.html')
+                                    | Second level link
+                              li
+                                 a(href='index.html')
+                                    | Second level link
+                              li
+                                 a(href='index.html')
+                                    | Second level link
+            // END HORIZANTAL MENU
+            // BEGIN HEADER SEARCH BOX
+            // DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box
+            form.search-form(action='extra_search.html', method='GET')
+               .input-group
+                  input.form-control(type='text', placeholder='Search...', name='query')
+                  span.input-group-btn
+                     a.btn.submit(href='javascript:;')
+                        i.icon-magnifier
+            // END HEADER SEARCH BOX
+            // BEGIN RESPONSIVE MENU TOGGLER
+            a.menu-toggler.responsive-toggler(href='javascript:;', data-toggle='collapse', data-target='.navbar-collapse')
+            // END RESPONSIVE MENU TOGGLER
+            // BEGIN TOP NAVIGATION MENU
+            .top-menu
+               ul.nav.navbar-nav.pull-right
+                  // BEGIN NOTIFICATION DROPDOWN
+                  // DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte
+                  li#header_notification_bar.dropdown.dropdown-extended.dropdown-notification
+                     a.dropdown-toggle(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                        i.icon-bell
+                        span.badge.badge-default
+                           | 7
+                     ul.dropdown-menu
+                        li.external
+                           h3
+                              span.bold 12 pending
+                              |  notifications
+                           a(href='extra_profile.html') view all
+                        li
+                           ul.dropdown-menu-list.scroller(style='height: 250px;', data-handle-color='#637283')
+                              li
+                                 a(href='javascript:;')
+                                    span.time just now
+                                    span.details
+                                       span.label.label-sm.label-icon.label-success
+                                          i.fa.fa-plus
+                                       | 									New user registered.
+                              li
+                                 a(href='javascript:;')
+                                    span.time 3 mins
+                                    span.details
+                                       span.label.label-sm.label-icon.label-danger
+                                          i.fa.fa-bolt
+                                       | 									Server #12 overloaded.
+                              li
+                                 a(href='javascript:;')
+                                    span.time 10 mins
+                                    span.details
+                                       span.label.label-sm.label-icon.label-warning
+                                          i.fa.fa-bell-o
+                                       | 									Server #2 not responding.
+                              li
+                                 a(href='javascript:;')
+                                    span.time 14 hrs
+                                    span.details
+                                       span.label.label-sm.label-icon.label-info
+                                          i.fa.fa-bullhorn
+                                       | 									Application error.
+                              li
+                                 a(href='javascript:;')
+                                    span.time 2 days
+                                    span.details
+                                       span.label.label-sm.label-icon.label-danger
+                                          i.fa.fa-bolt
+                                       | 									Database overloaded 68%.
+                              li
+                                 a(href='javascript:;')
+                                    span.time 3 days
+                                    span.details
+                                       span.label.label-sm.label-icon.label-danger
+                                          i.fa.fa-bolt
+                                       | 									A user IP blocked.
+                              li
+                                 a(href='javascript:;')
+                                    span.time 4 days
+                                    span.details
+                                       span.label.label-sm.label-icon.label-warning
+                                          i.fa.fa-bell-o
+                                       | 									Storage Server #4 not responding dfdfdfd.
+                              li
+                                 a(href='javascript:;')
+                                    span.time 5 days
+                                    span.details
+                                       span.label.label-sm.label-icon.label-info
+                                          i.fa.fa-bullhorn
+                                       | 									System Error.
+                              li
+                                 a(href='javascript:;')
+                                    span.time 9 days
+                                    span.details
+                                       span.label.label-sm.label-icon.label-danger
+                                          i.fa.fa-bolt
+                                       | 									Storage server failed.
+                  // END NOTIFICATION DROPDOWN
+                  // BEGIN INBOX DROPDOWN
+                  // DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte
+                  li#header_inbox_bar.dropdown.dropdown-extended.dropdown-inbox
+                     a.dropdown-toggle(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                        i.icon-envelope-open
+                        span.badge.badge-default
+                           | 4
+                     ul.dropdown-menu
+                        li.external
+                           h3
+                              | You have
+                              span.bold 7 New
+                              |  Messages
+                           a(href='page_inbox.html') view all
+                        li
+                           ul.dropdown-menu-list.scroller(style='height: 275px;', data-handle-color='#637283')
+                              li
+                                 a(href='inbox.html?a=view')
+                                    span.photo
+                                       img.img-circle(src='../../assets/admin/layout3/img/avatar2.jpg', alt='')
+                                    span.subject
+                                       span.from
+                                          | Lisa Wong
+                                       span.time Just Now
+                                    span.message
+                                       | Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh...
+                              li
+                                 a(href='inbox.html?a=view')
+                                    span.photo
+                                       img.img-circle(src='../../assets/admin/layout3/img/avatar3.jpg', alt='')
+                                    span.subject
+                                       span.from
+                                          | Richard Doe
+                                       span.time 16 mins
+                                    span.message
+                                       | Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh...
+                              li
+                                 a(href='inbox.html?a=view')
+                                    span.photo
+                                       img.img-circle(src='../../assets/admin/layout3/img/avatar1.jpg', alt='')
+                                    span.subject
+                                       span.from
+                                          | Bob Nilson
+                                       span.time 2 hrs
+                                    span.message
+                                       | Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh...
+                              li
+                                 a(href='inbox.html?a=view')
+                                    span.photo
+                                       img.img-circle(src='../../assets/admin/layout3/img/avatar2.jpg', alt='')
+                                    span.subject
+                                       span.from
+                                          | Lisa Wong
+                                       span.time 40 mins
+                                    span.message
+                                       | Vivamus sed auctor 40% nibh congue nibh...
+                              li
+                                 a(href='inbox.html?a=view')
+                                    span.photo
+                                       img.img-circle(src='../../assets/admin/layout3/img/avatar3.jpg', alt='')
+                                    span.subject
+                                       span.from
+                                          | Richard Doe
+                                       span.time 46 mins
+                                    span.message
+                                       | Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh...
+                  // END INBOX DROPDOWN
+                  // BEGIN TODO DROPDOWN
+                  // DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte
+                  li#header_task_bar.dropdown.dropdown-extended.dropdown-tasks
+                     a.dropdown-toggle(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                        i.icon-calendar
+                        span.badge.badge-default
+                           | 3
+                     ul.dropdown-menu.extended.tasks
+                        li.external
+                           h3
+                              | You have
+                              span.bold 12 pending
+                              |  tasks
+                           a(href='page_todo.html') view all
+                        li
+                           ul.dropdown-menu-list.scroller(style='height: 275px;', data-handle-color='#637283')
+                              li
+                                 a(href='javascript:;')
+                                    span.task
+                                       span.desc New release v1.2
+                                       span.percent 30%
+                                    span.progress
+                                       span.progress-bar.progress-bar-success(style='width: 40%;', aria-valuenow='40', aria-valuemin='0', aria-valuemax='100')
+                                          span.sr-only 40% Complete
+                              li
+                                 a(href='javascript:;')
+                                    span.task
+                                       span.desc Application deployment
+                                       span.percent 65%
+                                    span.progress
+                                       span.progress-bar.progress-bar-danger(style='width: 65%;', aria-valuenow='65', aria-valuemin='0', aria-valuemax='100')
+                                          span.sr-only 65% Complete
+                              li
+                                 a(href='javascript:;')
+                                    span.task
+                                       span.desc Mobile app release
+                                       span.percent 98%
+                                    span.progress
+                                       span.progress-bar.progress-bar-success(style='width: 98%;', aria-valuenow='98', aria-valuemin='0', aria-valuemax='100')
+                                          span.sr-only 98% Complete
+                              li
+                                 a(href='javascript:;')
+                                    span.task
+                                       span.desc Database migration
+                                       span.percent 10%
+                                    span.progress
+                                       span.progress-bar.progress-bar-warning(style='width: 10%;', aria-valuenow='10', aria-valuemin='0', aria-valuemax='100')
+                                          span.sr-only 10% Complete
+                              li
+                                 a(href='javascript:;')
+                                    span.task
+                                       span.desc Web server upgrade
+                                       span.percent 58%
+                                    span.progress
+                                       span.progress-bar.progress-bar-info(style='width: 58%;', aria-valuenow='58', aria-valuemin='0', aria-valuemax='100')
+                                          span.sr-only 58% Complete
+                              li
+                                 a(href='javascript:;')
+                                    span.task
+                                       span.desc Mobile development
+                                       span.percent 85%
+                                    span.progress
+                                       span.progress-bar.progress-bar-success(style='width: 85%;', aria-valuenow='85', aria-valuemin='0', aria-valuemax='100')
+                                          span.sr-only 85% Complete
+                              li
+                                 a(href='javascript:;')
+                                    span.task
+                                       span.desc New UI release
+                                       span.percent 38%
+                                    span.progress.progress-striped
+                                       span.progress-bar.progress-bar-important(style='width: 38%;', aria-valuenow='18', aria-valuemin='0', aria-valuemax='100')
+                                          span.sr-only 38% Complete
+                  // END TODO DROPDOWN
+                  // BEGIN USER LOGIN DROPDOWN
+                  // DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte
+                  li.dropdown.dropdown-user
+                     a.dropdown-toggle(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                        img.img-circle(alt='', src='../../assets/admin/layout/img/avatar3_small.jpg')
+                        span.username.username-hide-on-mobile
+                           | Nick
+                        i.fa.fa-angle-down
+                     ul.dropdown-menu.dropdown-menu-default
+                        li
+                           a(href='extra_profile.html')
+                              i.icon-user
+                              |  My Profile
+                        li
+                           a(href='page_calendar.html')
+                              i.icon-calendar
+                              |  My Calendar
+                        li
+                           a(href='inbox.html')
+                              i.icon-envelope-open
+                              |  My Inbox
+                              span.badge.badge-danger
+                                 | 3
+                        li
+                           a(href='page_todo.html')
+                              i.icon-rocket
+                              |  My Tasks
+                              span.badge.badge-success
+                                 | 7
+                        li.divider
+                        li
+                           a(href='extra_lock.html')
+                              i.icon-lock
+                              |  Lock Screen
+                        li
+                           a(href='login.html')
+                              i.icon-key
+                              |  Log Out
+                  // END USER LOGIN DROPDOWN
+                  // BEGIN QUICK SIDEBAR TOGGLER
+                  // DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte
+                  li.dropdown.dropdown-quick-sidebar-toggler
+                     a.dropdown-toggle(href='javascript:;')
+                        i.icon-logout
+                  // END QUICK SIDEBAR TOGGLER
+            // END TOP NAVIGATION MENU
+         // END HEADER INNER
+      // END HEADER
+      .clearfix
+      // BEGIN CONTAINER
+      .page-container
+         // BEGIN SIDEBAR
+         .page-sidebar-wrapper
+            // BEGIN HORIZONTAL RESPONSIVE MENU
+            // DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing
+            // DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed
+            .page-sidebar.navbar-collapse.collapse
+               ul.page-sidebar-menu(data-slide-speed='200', data-auto-scroll='true')
+                  // DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element
+                  // DOC: This is mobile version of the horizontal menu. The desktop version is defined(duplicated) in the header above
+                  li.sidebar-search-wrapper
+                     // BEGIN RESPONSIVE QUICK SEARCH FORM
+                     // DOC: Apply "sidebar-search-bordered" class the below search form to have bordered search box
+                     // DOC: Apply "sidebar-search-bordered sidebar-search-solid" class the below search form to have bordered & solid search box
+                     form.sidebar-search.sidebar-search-bordered(action='extra_search.html', method='POST')
+                        a.remove(href='javascript:;')
+                           i.icon-close
+                        .input-group
+                           input.form-control(type='text', placeholder='Search...')
+                           span.input-group-btn
+                              button.btn.submit
+                                 i.icon-magnifier
+                     // END RESPONSIVE QUICK SEARCH FORM
+                  li.active
+                     a(href='index.html')
+                        | Dashboard
+                        span.selected
+                  li
+                     a(href='javascript:;')
+                        | Mega
+                        span.arrow
+                     ul.sub-menu
+                        li
+                           a(href='javascript:;')
+                              | Layouts
+                              span.arrow
+                           ul.sub-menu
+                              li.active
+                                 a(href='layout_horizontal_sidebar_menu.html')
+                                    | Horizontal & Sidebar Menu
+                              li
+                                 a(href='index_horizontal_menu.html')
+                                    | Dashboard & Mega Menu
+                              li
+                                 a(href='layout_horizontal_menu1.html')
+                                    | Horizontal Mega Menu 1
+                              li
+                                 a(href='layout_horizontal_menu2.html')
+                                    | Horizontal Mega Menu 2
+                              li
+                                 a(href='layout_fontawesome_icons.html')
+                                    span.badge.badge-roundless.badge-danger new
+                                    | Layout with Fontawesome Icons
+                              li
+                                 a(href='layout_glyphicons.html')
+                                    | Layout with Glyphicon
+                              li
+                                 a(href='layout_full_height_portlet.html')
+                                    span.badge.badge-roundless.badge-success new
+                                    | Full Height Portlet
+                              li
+                                 a(href='layout_full_height_content.html')
+                                    span.badge.badge-roundless.badge-warning new
+                                    | Full Height Content
+                              li
+                                 a(href='layout_search_on_header1.html')
+                                    | Search Box On Header 1
+                              li
+                                 a(href='layout_search_on_header2.html')
+                                    | Search Box On Header 2
+                              li
+                                 a(href='layout_sidebar_search_option1.html')
+                                    | Sidebar Search Option 1
+                              li
+                                 a(href='layout_sidebar_search_option2.html')
+                                    | Sidebar Search Option 2
+                              li
+                                 a(href='layout_sidebar_reversed.html')
+                                    span.badge.badge-roundless.badge-warning
+                                       | new
+                                    | 									Right Sidebar Page
+                              li
+                                 a(href='layout_sidebar_fixed.html')
+                                    | Sidebar Fixed Page
+                              li
+                                 a(href='layout_sidebar_closed.html')
+                                    | Sidebar Closed Page
+                              li
+                                 a(href='layout_ajax.html')
+                                    | Content Loading via Ajax
+                              li
+                                 a(href='layout_disabled_menu.html')
+                                    | Disabled Menu Links
+                              li
+                                 a(href='layout_blank_page.html')
+                                    | Blank Page
+                              li
+                                 a(href='layout_boxed_page.html')
+                                    | Boxed Page
+                              li
+                                 a(href='layout_language_bar.html')
+                                    | Language Switch Bar
+                        li
+                           a(href='javascript:;')
+                              | More Layouts
+                              span.arrow
+                           ul.sub-menu
+                              li
+                                 a(href='layout_sidebar_search_option1.html')
+                                    | Sidebar Search Option 1
+                              li
+                                 a(href='layout_sidebar_search_option2.html')
+                                    | Sidebar Search Option 2
+                              li
+                                 a(href='layout_sidebar_reversed.html')
+                                    span.badge.badge-roundless.badge-success
+                                       | new
+                                    | 									Right Sidebar Page
+                              li
+                                 a(href='layout_sidebar_fixed.html')
+                                    | Sidebar Fixed Page
+                              li
+                                 a(href='layout_sidebar_closed.html')
+                                    | Sidebar Closed Page
+                              li
+                                 a(href='layout_ajax.html')
+                                    | Content Loading via Ajax
+                        li
+                           a(href='javascript:;')
+                              | Even More
+                              span.arrow
+                           ul.sub-menu
+                              li
+                                 a(href='layout_disabled_menu.html')
+                                    | Disabled Menu Links
+                              li
+                                 a(href='layout_blank_page.html')
+                                    | Blank Page
+                              li
+                                 a(href='layout_boxed_page.html')
+                                    | Boxed Page
+                              li
+                                 a(href='layout_language_bar.html')
+                                    | Language Switch Bar
+                  li
+                     a(href='javascript:;')
+                        | Full Mega
+                        span.arrow
+                     ul.sub-menu
+                        li
+                           a(href='javascript:;')
+                              | Layouts
+                              span.arrow
+                           ul.sub-menu
+                              li
+                                 a(href='index_horizontal_menu.html')
+                                    | Dashboard & Mega Menu
+                              li
+                                 a(href='layout_horizontal_sidebar_menu.html')
+                                    | Horizontal & Sidebar Menu
+                              li
+                                 a(href='layout_horizontal_menu1.html')
+                                    | Horizontal Mega Menu 1
+                              li
+                                 a(href='layout_horizontal_menu2.html')
+                                    | Horizontal Mega Menu 2
+                              li
+                                 a(href='layout_search_on_header1.html')
+                                    | Search Box On Header 1
+                              li
+                                 a(href='layout_search_on_header2.html')
+                                    | Search Box On Header 2
+                        li
+                           a(href='javascript:;')
+                              | More Layouts
+                              span.arrow
+                           ul.sub-menu
+                              li
+                                 a(href='layout_sidebar_search_option1.html')
+                                    | Sidebar Search Option 1
+                              li
+                                 a(href='layout_sidebar_search_option2.html')
+                                    | Sidebar Search Option 2
+                              li
+                                 a(href='layout_sidebar_reversed.html')
+                                    span.badge.badge-roundless.badge-success
+                                       | new
+                                    | 									Right Sidebar Page
+                              li
+                                 a(href='layout_sidebar_fixed.html')
+                                    | Sidebar Fixed Page
+                              li
+                                 a(href='layout_sidebar_closed.html')
+                                    | Sidebar Closed Page
+                              li
+                                 a(href='layout_ajax.html')
+                                    | Content Loading via Ajax
+                        li
+                           a(href='javascript:;')
+                              | Even More
+                              span.arrow
+                           ul.sub-menu
+                              li
+                                 a(href='layout_disabled_menu.html')
+                                    | Disabled Menu Links
+                              li
+                                 a(href='layout_blank_page.html')
+                                    | Blank Page
+                              li
+                                 a(href='layout_boxed_page.html')
+                                    | Boxed Page
+                              li
+                                 a(href='layout_language_bar.html')
+                                    | Language Switch Bar
+                        li
+                           a(href='javascript:;')
+                              | Accordions
+                              span.arrow
+                           ul.sub-menu
+                              li
+                                 #accordion2.panel-group.mega-menu-responsive-content
+                                    .panel.panel-success
+                                       .panel-heading
+                                          h4.panel-title
+                                             a.collapsed(data-toggle='collapse', data-parent='#accordion2', href='#collapseOne2')
+                                                | Mega Menu Info #1
+                                       #collapseOne2.panel-collapse.in
+                                          .panel-body
+                                             | Metronic Mega Menu Works for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
+                                    .panel.panel-danger
+                                       .panel-heading
+                                          h4.panel-title
+                                             a.collapsed(data-toggle='collapse', data-parent='#accordion2', href='#collapseTwo2')
+                                                | Mega Menu Info #2
+                                       #collapseTwo2.panel-collapse.collapse
+                                          .panel-body
+                                             | Metronic Mega Menu Works for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
+                                    .panel.panel-info
+                                       .panel-heading
+                                          h4.panel-title
+                                             a(data-toggle='collapse', data-parent='#accordion2', href='#collapseThree2')
+                                                | Mega Menu Info #3
+                                       #collapseThree2.panel-collapse.collapse
+                                          .panel-body
+                                             | Metronic Mega Menu Works for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
+                  li
+                     a
+                        | Classic
+                        span.arrow
+                     ul.sub-menu
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-bookmark-o
+                              |  Section 1
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-user
+                              |  Section 2
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-puzzle-piece
+                              |  Section 3
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-gift
+                              |  Section 4
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-table
+                              |  Section 5
+                        li
+                           a(href='javascript:;')
+                              i.fa.fa-envelope-o
+                              |  More options
+                              span.arrow
+                           ul.sub-menu
+                              li
+                                 a(href='javascript:;')
+                                    | Second level link
+                              li.sub-menu
+                                 a(href='javascript:;')
+                                    | More options
+                                    span.arrow
+                                 ul.sub-menu
+                                    li
+                                       a(href='index.html')
+                                          | Third level link
+                                    li
+                                       a(href='index.html')
+                                          | Third level link
+                                    li
+                                       a(href='index.html')
+                                          | Third level link
+                                    li
+                                       a(href='index.html')
+                                          | Third level link
+                                    li
+                                       a(href='index.html')
+                                          | Third level link
+                              li
+                                 a(href='index.html')
+                                    | Second level link
+                              li
+                                 a(href='index.html')
+                                    | Second level link
+                              li
+                                 a(href='index.html')
+                                    | Second level link
+            // END HORIZONTAL RESPONSIVE MENU
+         // END SIDEBAR
+         // BEGIN CONTENT
+         .page-content-wrapper
+            .page-content
+               // BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM
+               #portlet-config.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                  .modal-dialog
+                     .modal-content
+                        .modal-header
+                           button.close(type='button', data-dismiss='modal', aria-hidden='true')
+                           h4.modal-title Modal title
+                        .modal-body
+                           | Widget settings form goes here
+                        .modal-footer
+                           button.btn.blue(type='button') Save changes
+                           button.btn.default(type='button', data-dismiss='modal') Close
+                     // /.modal-content
+                  // /.modal-dialog
+               // /.modal
+               // END SAMPLE PORTLET CONFIGURATION MODAL FORM
+               // BEGIN STYLE CUSTOMIZER
+               .theme-panel.hidden-xs.hidden-sm
+                  .toggler
+                  .toggler-close
+                  .theme-options
+                     .theme-option.theme-colors.clearfix
+                        span
+                           | THEME COLOR
+                        ul
+                           li.color-default.current.tooltips(data-style='default', data-container='body', data-original-title='Default')
+                           li.color-darkblue.tooltips(data-style='darkblue', data-container='body', data-original-title='Dark Blue')
+                           li.color-blue.tooltips(data-style='blue', data-container='body', data-original-title='Blue')
+                           li.color-grey.tooltips(data-style='grey', data-container='body', data-original-title='Grey')
+                           li.color-light.tooltips(data-style='light', data-container='body', data-original-title='Light')
+                           li.color-light2.tooltips(data-style='light2', data-container='body', data-html='true', data-original-title='Light 2')
+                     .theme-option
+                        span
+                           | Theme Style
+                        select.layout-style-option.form-control.input-sm
+                           option(value='square', selected='selected') Square corners
+                           option(value='rounded') Rounded corners
+                     .theme-option
+                        span
+                           | Layout
+                        select.layout-option.form-control.input-sm
+                           option(value='fluid', selected='selected') Fluid
+                           option(value='boxed') Boxed
+                     .theme-option
+                        span
+                           | Header
+                        select.page-header-option.form-control.input-sm
+                           option(value='fixed', selected='selected') Fixed
+                           option(value='default') Default
+                     .theme-option
+                        span
+                           | Top Menu Dropdown
+                        select.page-header-top-dropdown-style-option.form-control.input-sm
+                           option(value='light', selected='selected') Light
+                           option(value='dark') Dark
+                     .theme-option
+                        span
+                           | Sidebar Mode
+                        select.sidebar-option.form-control.input-sm
+                           option(value='fixed') Fixed
+                           option(value='default', selected='selected') Default
+                     .theme-option
+                        span
+                           | Sidebar Menu
+                        select.sidebar-menu-option.form-control.input-sm
+                           option(value='accordion', selected='selected') Accordion
+                           option(value='hover') Hover
+                     .theme-option
+                        span
+                           | Sidebar Style
+                        select.sidebar-style-option.form-control.input-sm
+                           option(value='default', selected='selected') Default
+                           option(value='light') Light
+                     .theme-option
+                        span
+                           | Sidebar Position
+                        select.sidebar-pos-option.form-control.input-sm
+                           option(value='left', selected='selected') Left
+                           option(value='right') Right
+                     .theme-option
+                        span
+                           | Footer
+                        select.page-footer-option.form-control.input-sm
+                           option(value='fixed') Fixed
+                           option(value='default', selected='selected') Default
+               // END STYLE CUSTOMIZER
+               // BEGIN PAGE HEADER
+               h3.page-title
+                  | Dashboard & Mega Menu
+                  small statistics and more
+               .page-bar
+                  ul.page-breadcrumb
+                     li
+                        i.fa.fa-home
+                        a(href='index.html') Home
+                        i.fa.fa-angle-right
+                     li
+                        a(href='#') Page Layouts
+                        i.fa.fa-angle-right
+                     li
+                        a(href='#') Dashboard & Mega Menu
+                  .page-toolbar
+                     #dashboard-report-range.pull-right.tooltips.btn.btn-fit-height.grey-salt(data-placement='top', data-original-title='Change dashboard date range')
+                        i.icon-calendar
+                        span.thin.uppercase.visible-lg-inline-block
+                        i.fa.fa-angle-down
+               // END PAGE HEADER
+               // BEGIN DASHBOARD STATS
+               .row
+                  .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                     .dashboard-stat.blue-madison
+                        .visual
+                           i.fa.fa-comments
+                        .details
+                           .number
+                              | 1349
+                           .desc
+                              | New Feedbacks
+                        a.more(href='javascript:;')
+                           | View more
+                           i.m-icon-swapright.m-icon-white
+                  .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                     .dashboard-stat.red-intense
+                        .visual
+                           i.fa.fa-bar-chart-o
+                        .details
+                           .number
+                              | 12,5M$
+                           .desc
+                              | Total Profit
+                        a.more(href='javascript:;')
+                           | View more
+                           i.m-icon-swapright.m-icon-white
+                  .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                     .dashboard-stat.green-haze
+                        .visual
+                           i.fa.fa-shopping-cart
+                        .details
+                           .number
+                              | 549
+                           .desc
+                              | New Orders
+                        a.more(href='javascript:;')
+                           | View more
+                           i.m-icon-swapright.m-icon-white
+                  .col-lg-3.col-md-3.col-sm-6.col-xs-12
+                     .dashboard-stat.purple-plum
+                        .visual
+                           i.fa.fa-globe
+                        .details
+                           .number
+                              | +89%
+                           .desc
+                              | Brand Popularity
+                        a.more(href='javascript:;')
+                           | View more
+                           i.m-icon-swapright.m-icon-white
+               // END DASHBOARD STATS
+               .clearfix
+               .row
+                  .col-md-6.col-sm-6
+                     // BEGIN PORTLET
+                     .portlet.solid.bordered.grey-cararra
+                        .portlet-title
+                           .caption
+                              i.fa.fa-bar-chart-o
+                              | Site Visits
+                           .actions
+                              .btn-group(data-toggle='buttons')
+                                 label.btn.grey-steel.btn-sm.active
+                                    input#option1.toggle(type='radio', name='options')
+                                    | New
+                                 label.btn.grey-steel.btn-sm
+                                    input#option2.toggle(type='radio', name='options')
+                                    | Returning
+                        .portlet-body
+                           #site_statistics_loading
+                              img(src='../../assets/admin/layout/img/loading.gif', alt='loading')
+                           #site_statistics_content.display-none
+                              #site_statistics.chart
+                     // END PORTLET
+                  .col-md-6.col-sm-6
+                     // BEGIN PORTLET
+                     .portlet.solid.grey-cararra.bordered
+                        .portlet-title
+                           .caption
+                              i.fa.fa-bullhorn
+                              | Revenue
+                           .actions
+                              .btn-group.pull-right
+                                 a.btn.grey-steel.btn-sm.dropdown-toggle(href='', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                    | Filter
+                                    span.fa.fa-angle-down
+                                 ul.dropdown-menu.pull-right
+                                    li
+                                       a(href='javascript:;')
+                                          | Q1 2014
+                                          span.label.label-sm.label-default
+                                             | past
+                                    li
+                                       a(href='javascript:;')
+                                          | Q2 2014
+                                          span.label.label-sm.label-default
+                                             | past
+                                    li.active
+                                       a(href='javascript:;')
+                                          | Q3 2014
+                                          span.label.label-sm.label-success
+                                             | current
+                                    li
+                                       a(href='javascript:;')
+                                          | Q4 2014
+                                          span.label.label-sm.label-warning
+                                             | upcoming
+                        .portlet-body
+                           #site_activities_loading
+                              img(src='../../assets/admin/layout/img/loading.gif', alt='loading')
+                           #site_activities_content.display-none
+                              #site_activities(style='height: 228px;')
+                           div(style='margin: 20px 0 10px 30px')
+                              .row
+                                 .col-md-3.col-sm-3.col-xs-6.text-stat
+                                    span.label.label-sm.label-success
+                                       | Revenue:
+                                    h3 $13,234
+                                 .col-md-3.col-sm-3.col-xs-6.text-stat
+                                    span.label.label-sm.label-info
+                                       | Tax:
+                                    h3 $134,900
+                                 .col-md-3.col-sm-3.col-xs-6.text-stat
+                                    span.label.label-sm.label-danger
+                                       | Shipment:
+                                    h3 $1,134
+                                 .col-md-3.col-sm-3.col-xs-6.text-stat
+                                    span.label.label-sm.label-warning
+                                       | Orders:
+                                    h3 235090
+                     // END PORTLET
+               .clearfix
+               .row
+                  .col-md-6.col-sm-6
+                     .portlet.box.blue-steel
+                        .portlet-title
+                           .caption
+                              i.fa.fa-bell-o
+                              | Recent Activities
+                           .actions
+                              .btn-group
+                                 a.btn.btn-sm.btn-default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                    | Filter By
+                                    i.fa.fa-angle-down
+                                 .dropdown-menu.hold-on-click.dropdown-checkboxes.pull-right
+                                    label
+                                       input(type='checkbox')
+                                       |  Finance
+                                    label
+                                       input(type='checkbox', checked='')
+                                       |  Membership
+                                    label
+                                       input(type='checkbox')
+                                       |  Customer Support
+                                    label
+                                       input(type='checkbox', checked='')
+                                       |  HR
+                                    label
+                                       input(type='checkbox')
+                                       |  System
+                        .portlet-body
+                           .scroller(style='height: 300px;', data-always-visible='1', data-rail-visible='0')
+                              ul.feeds
+                                 li
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-info
+                                                i.fa.fa-check
+                                          .cont-col2
+                                             .desc
+                                                | You have 4 pending tasks.
+                                                span.label.label-sm.label-warning
+                                                   | Take action
+                                                   i.fa.fa-share
+                                    .col2
+                                       .date
+                                          | Just now
+                                 li
+                                    a(href='javascript:;')
+                                       .col1
+                                          .cont
+                                             .cont-col1
+                                                .label.label-sm.label-success
+                                                   i.fa.fa-bar-chart-o
+                                             .cont-col2
+                                                .desc
+                                                   | Finance Report for year 2013 has been released.
+                                       .col2
+                                          .date
+                                             | 20 mins
+                                 li
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-danger
+                                                i.fa.fa-user
+                                          .cont-col2
+                                             .desc
+                                                | You have 5 pending membership that requires a quick review.
+                                    .col2
+                                       .date
+                                          | 24 mins
+                                 li
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-info
+                                                i.fa.fa-shopping-cart
+                                          .cont-col2
+                                             .desc
+                                                | New order received with
+                                                span.label.label-sm.label-success
+                                                   | Reference Number: DR23923
+                                    .col2
+                                       .date
+                                          | 30 mins
+                                 li
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-success
+                                                i.fa.fa-user
+                                          .cont-col2
+                                             .desc
+                                                | You have 5 pending membership that requires a quick review.
+                                    .col2
+                                       .date
+                                          | 24 mins
+                                 li
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-default
+                                                i.fa.fa-bell-o
+                                          .cont-col2
+                                             .desc
+                                                | Web server hardware needs to be upgraded.
+                                                span.label.label-sm.label-default
+                                                   | Overdue
+                                    .col2
+                                       .date
+                                          | 2 hours
+                                 li
+                                    a(href='javascript:;')
+                                       .col1
+                                          .cont
+                                             .cont-col1
+                                                .label.label-sm.label-default
+                                                   i.fa.fa-briefcase
+                                             .cont-col2
+                                                .desc
+                                                   | IPO Report for year 2013 has been released.
+                                       .col2
+                                          .date
+                                             | 20 mins
+                                 li
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-info
+                                                i.fa.fa-check
+                                          .cont-col2
+                                             .desc
+                                                | You have 4 pending tasks.
+                                                span.label.label-sm.label-warning
+                                                   | Take action
+                                                   i.fa.fa-share
+                                    .col2
+                                       .date
+                                          | Just now
+                                 li
+                                    a(href='javascript:;')
+                                       .col1
+                                          .cont
+                                             .cont-col1
+                                                .label.label-sm.label-danger
+                                                   i.fa.fa-bar-chart-o
+                                             .cont-col2
+                                                .desc
+                                                   | Finance Report for year 2013 has been released.
+                                       .col2
+                                          .date
+                                             | 20 mins
+                                 li
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-default
+                                                i.fa.fa-user
+                                          .cont-col2
+                                             .desc
+                                                | You have 5 pending membership that requires a quick review.
+                                    .col2
+                                       .date
+                                          | 24 mins
+                                 li
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-info
+                                                i.fa.fa-shopping-cart
+                                          .cont-col2
+                                             .desc
+                                                | New order received with
+                                                span.label.label-sm.label-success
+                                                   | Reference Number: DR23923
+                                    .col2
+                                       .date
+                                          | 30 mins
+                                 li
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-success
+                                                i.fa.fa-user
+                                          .cont-col2
+                                             .desc
+                                                | You have 5 pending membership that requires a quick review.
+                                    .col2
+                                       .date
+                                          | 24 mins
+                                 li
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-warning
+                                                i.fa.fa-bell-o
+                                          .cont-col2
+                                             .desc
+                                                | Web server hardware needs to be upgraded.
+                                                span.label.label-sm.label-default
+                                                   | Overdue
+                                    .col2
+                                       .date
+                                          | 2 hours
+                                 li
+                                    a(href='javascript:;')
+                                       .col1
+                                          .cont
+                                             .cont-col1
+                                                .label.label-sm.label-info
+                                                   i.fa.fa-briefcase
+                                             .cont-col2
+                                                .desc
+                                                   | IPO Report for year 2013 has been released.
+                                       .col2
+                                          .date
+                                             | 20 mins
+                           .scroller-footer
+                              .btn-arrow-link.pull-right
+                                 a(href='javascript:;') See All Records
+                                 i.icon-arrow-right
+                  .col-md-6.col-sm-6
+                     .portlet.box.green-haze.tasks-widget
+                        .portlet-title
+                           .caption
+                              i.fa.fa-check
+                              | Tasks
+                           .tools
+                              a.config(href='#portlet-config', data-toggle='modal')
+                              a.reload(href='')
+                              a.fullscreen(href='')
+                           .actions
+                              .btn-group
+                                 a.btn.btn-default.btn-sm(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                    | More
+                                    i.fa.fa-angle-down
+                                 ul.dropdown-menu.pull-right
+                                    li
+                                       a(href='javascript:;')
+                                          i.i
+                                          |  All Project
+                                    li.divider
+                                    li
+                                       a(href='javascript:;')
+                                          | AirAsia
+                                    li
+                                       a(href='javascript:;')
+                                          | Cruise
+                                    li
+                                       a(href='javascript:;')
+                                          | HSBC
+                                    li.divider
+                                    li
+                                       a(href='javascript:;')
+                                          | Pending
+                                          span.badge.badge-danger
+                                             | 4
+                                    li
+                                       a(href='javascript:;')
+                                          | Completed
+                                          span.badge.badge-success
+                                             | 12
+                                    li
+                                       a(href='javascript:;')
+                                          | Overdue
+                                          span.badge.badge-warning
+                                             | 9
+                        .portlet-body
+                           .task-content
+                              .scroller(style='height: 305px;', data-always-visible='1', data-rail-visible1='1')
+                                 // START TASK LIST
+                                 ul.task-list
+                                    li
+                                       .task-checkbox
+                                          input.liChild(type='checkbox', value='')
+                                       .task-title
+                                          span.task-title-sp
+                                             | Present 2013 Year IPO Statistics at Board Meeting
+                                          span.label.label-sm.label-success Company
+                                          span.task-bell
+                                             i.fa.fa-bell-o
+                                       .task-config
+                                          .task-config-btn.btn-group
+                                             a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                                i.fa.fa-cog
+                                                i.fa.fa-angle-down
+                                             ul.dropdown-menu.pull-right
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-check
+                                                      |  Complete
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-pencil
+                                                      |  Edit
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-trash-o
+                                                      |  Cancel
+                                    li
+                                       .task-checkbox
+                                          input.liChild(type='checkbox', value='')
+                                       .task-title
+                                          span.task-title-sp
+                                             | Hold An Interview for Marketing Manager Position
+                                          span.label.label-sm.label-danger Marketing
+                                       .task-config
+                                          .task-config-btn.btn-group
+                                             a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                                i.fa.fa-cog
+                                                i.fa.fa-angle-down
+                                             ul.dropdown-menu.pull-right
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-check
+                                                      |  Complete
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-pencil
+                                                      |  Edit
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-trash-o
+                                                      |  Cancel
+                                    li
+                                       .task-checkbox
+                                          input.liChild(type='checkbox', value='')
+                                       .task-title
+                                          span.task-title-sp
+                                             | AirAsia Intranet System Project Internal Meeting
+                                          span.label.label-sm.label-success AirAsia
+                                          span.task-bell
+                                             i.fa.fa-bell-o
+                                       .task-config
+                                          .task-config-btn.btn-group
+                                             a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                                i.fa.fa-cog
+                                                i.fa.fa-angle-down
+                                             ul.dropdown-menu.pull-right
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-check
+                                                      |  Complete
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-pencil
+                                                      |  Edit
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-trash-o
+                                                      |  Cancel
+                                    li
+                                       .task-checkbox
+                                          input.liChild(type='checkbox', value='')
+                                       .task-title
+                                          span.task-title-sp
+                                             | Technical Management Meeting
+                                          span.label.label-sm.label-warning Company
+                                       .task-config
+                                          .task-config-btn.btn-group
+                                             a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                                i.fa.fa-cog
+                                                i.fa.fa-angle-down
+                                             ul.dropdown-menu.pull-right
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-check
+                                                      |  Complete
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-pencil
+                                                      |  Edit
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-trash-o
+                                                      |  Cancel
+                                    li
+                                       .task-checkbox
+                                          input.liChild(type='checkbox', value='')
+                                       .task-title
+                                          span.task-title-sp
+                                             | Kick-off Company CRM Mobile App Development
+                                          span.label.label-sm.label-info Internal Products
+                                       .task-config
+                                          .task-config-btn.btn-group
+                                             a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                                i.fa.fa-cog
+                                                i.fa.fa-angle-down
+                                             ul.dropdown-menu.pull-right
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-check
+                                                      |  Complete
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-pencil
+                                                      |  Edit
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-trash-o
+                                                      |  Cancel
+                                    li
+                                       .task-checkbox
+                                          input.liChild(type='checkbox', value='')
+                                       .task-title
+                                          span.task-title-sp
+                                             | Prepare Commercial Offer For SmartVision Website Rewamp
+                                          span.label.label-sm.label-danger SmartVision
+                                       .task-config
+                                          .task-config-btn.btn-group
+                                             a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                                i.fa.fa-cog
+                                                i.fa.fa-angle-down
+                                             ul.dropdown-menu.pull-right
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-check
+                                                      |  Complete
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-pencil
+                                                      |  Edit
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-trash-o
+                                                      |  Cancel
+                                    li
+                                       .task-checkbox
+                                          input.liChild(type='checkbox', value='')
+                                       .task-title
+                                          span.task-title-sp
+                                             | Sign-Off The Comercial Agreement With AutoSmart
+                                          span.label.label-sm.label-default AutoSmart
+                                          span.task-bell
+                                             i.fa.fa-bell-o
+                                       .task-config
+                                          .task-config-btn.btn-group
+                                             a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                                i.fa.fa-cog
+                                                i.fa.fa-angle-down
+                                             ul.dropdown-menu.pull-right
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-check
+                                                      |  Complete
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-pencil
+                                                      |  Edit
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-trash-o
+                                                      |  Cancel
+                                    li
+                                       .task-checkbox
+                                          input.liChild(type='checkbox', value='')
+                                       .task-title
+                                          span.task-title-sp
+                                             | Company Staff Meeting
+                                          span.label.label-sm.label-success Cruise
+                                          span.task-bell
+                                             i.fa.fa-bell-o
+                                       .task-config
+                                          .task-config-btn.btn-group
+                                             a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                                i.fa.fa-cog
+                                                i.fa.fa-angle-down
+                                             ul.dropdown-menu.pull-right
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-check
+                                                      |  Complete
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-pencil
+                                                      |  Edit
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-trash-o
+                                                      |  Cancel
+                                    li.last-line
+                                       .task-checkbox
+                                          input.liChild(type='checkbox', value='')
+                                       .task-title
+                                          span.task-title-sp
+                                             | KeenThemes Investment Discussion
+                                          span.label.label-sm.label-warning KeenThemes
+                                       .task-config
+                                          .task-config-btn.btn-group
+                                             a.btn.btn-xs.default(href='javascript:;', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                                i.fa.fa-cog
+                                                i.fa.fa-angle-down
+                                             ul.dropdown-menu.pull-right
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-check
+                                                      |  Complete
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-pencil
+                                                      |  Edit
+                                                li
+                                                   a(href='javascript:;')
+                                                      i.fa.fa-trash-o
+                                                      |  Cancel
+                                 // END START TASK LIST
+                           .task-footer
+                              .btn-arrow-link.pull-right
+                                 a(href='javascript:;') See All Records
+                                 i.icon-arrow-right
+               .clearfix
+               .row
+                  .col-md-6.col-sm-6
+                     .portlet.box.purple-wisteria
+                        .portlet-title
+                           .caption
+                              i.fa.fa-calendar
+                              | General Stats
+                           .actions
+                              a.btn.btn-sm.btn-default.easy-pie-chart-reload(href='javascript:;')
+                                 i.fa.fa-repeat
+                                 |  Reload
+                        .portlet-body
+                           .row
+                              .col-md-4
+                                 .easy-pie-chart
+                                    .number.transactions(data-percent='55')
+                                       span
+                                          | +55
+                                       | 											%
+                                    a.title(href='javascript:;')
+                                       | Transactions
+                                       i.icon-arrow-right
+                              .margin-bottom-10.visible-sm
+                              .col-md-4
+                                 .easy-pie-chart
+                                    .number.visits(data-percent='85')
+                                       span
+                                          | +85
+                                       | 											%
+                                    a.title(href='javascript:;')
+                                       | New Visits
+                                       i.icon-arrow-right
+                              .margin-bottom-10.visible-sm
+                              .col-md-4
+                                 .easy-pie-chart
+                                    .number.bounce(data-percent='46')
+                                       span
+                                          | -46
+                                       | 											%
+                                    a.title(href='javascript:;')
+                                       | Bounce
+                                       i.icon-arrow-right
+                  .col-md-6.col-sm-6
+                     .portlet.box.red-sunglo
+                        .portlet-title
+                           .caption
+                              i.fa.fa-calendar
+                              | Server Stats
+                           .tools
+                              a.collapse(href='')
+                              a.config(href='#portlet-config', data-toggle='modal')
+                              a.reload(href='')
+                              a.remove(href='')
+                        .portlet-body
+                           .row
+                              .col-md-4
+                                 .sparkline-chart
+                                    #sparkline_bar.number
+                                    a.title(href='javascript:;')
+                                       | Network
+                                       i.icon-arrow-right
+                              .margin-bottom-10.visible-sm
+                              .col-md-4
+                                 .sparkline-chart
+                                    #sparkline_bar2.number
+                                    a.title(href='javascript:;')
+                                       | CPU Load
+                                       i.icon-arrow-right
+                              .margin-bottom-10.visible-sm
+                              .col-md-4
+                                 .sparkline-chart
+                                    #sparkline_line.number
+                                    a.title(href='javascript:;')
+                                       | Load Rate
+                                       i.icon-arrow-right
+               .clearfix
+               .row
+                  .col-md-6.col-sm-6
+                     // BEGIN REGIONAL STATS PORTLET
+                     .portlet
+                        .portlet-title
+                           .caption
+                              i.fa.fa-globe
+                              | Regional Stats
+                           .tools
+                              a.collapse(href='')
+                              a.config(href='#portlet-config', data-toggle='modal')
+                              a.reload(href='')
+                              a.fullscreen(href='')
+                              a.remove(href='')
+                        .portlet-body
+                           #region_statistics_loading
+                              img(src='../../assets/admin/layout/img/loading.gif', alt='loading')
+                           #region_statistics_content.display-none
+                              .btn-toolbar.margin-bottom-10
+                                 .btn-group(data-toggle='buttons')
+                                    a.btn.default.btn-sm.active(href='')
+                                       | Users
+                                    a.btn.default.btn-sm(href='')
+                                       | Orders
+                                 .btn-group.pull-right
+                                    a.btn.default.btn-sm.dropdown-toggle(href='', data-toggle='dropdown', data-hover='dropdown', data-close-others='true')
+                                       | Select Region
+                                       span.fa.fa-angle-down
+                                    ul.dropdown-menu.pull-right
+                                       li
+                                          a#regional_stat_world(href='javascript:;')
+                                             | World
+                                       li
+                                          a#regional_stat_usa(href='javascript:;')
+                                             | USA
+                                       li
+                                          a#regional_stat_europe(href='javascript:;')
+                                             | Europe
+                                       li
+                                          a#regional_stat_russia(href='javascript:;')
+                                             | Russia
+                                       li
+                                          a#regional_stat_germany(href='javascript:;')
+                                             | Germany
+                              #vmap_world.vmaps.display-none
+                              #vmap_usa.vmaps.display-none
+                              #vmap_europe.vmaps.display-none
+                              #vmap_russia.vmaps.display-none
+                              #vmap_germany.vmaps.display-none
+                     // END REGIONAL STATS PORTLET
+                  .col-md-6.col-sm-6
+                     // BEGIN PORTLET
+                     .portlet.paddingless
+                        .portlet-title.line
+                           .caption
+                              i.fa.fa-bell-o
+                              | Feeds
+                           .tools
+                              a.collapse(href='')
+                              a.config(href='#portlet-config', data-toggle='modal')
+                              a.reload(href='')
+                              a.fullscreen(href='')
+                              a.remove(href='')
+                        .portlet-body
+                           // BEGIN TABS
+                           .tabbable-line
+                              ul.nav.nav-tabs
+                                 li.active
+                                    a(href='#tab_1_1', data-toggle='tab')
+                                       | System
+                                 li
+                                    a(href='#tab_1_2', data-toggle='tab')
+                                       | Activities
+                                 li
+                                    a(href='#tab_1_3', data-toggle='tab')
+                                       | Recent Users
+                              .tab-content
+                                 #tab_1_1.tab-pane.active
+                                    .scroller(style='height: 290px;', data-always-visible='1', data-rail-visible='0')
+                                       ul.feeds
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-success
+                                                         i.fa.fa-bell-o
+                                                   .cont-col2
+                                                      .desc
+                                                         | You have 4 pending tasks.
+                                                         span.label.label-sm.label-danger
+                                                            | Take action
+                                                            i.fa.fa-share
+                                             .col2
+                                                .date
+                                                   | Just now
+                                          li
+                                             a(href='javascript:;')
+                                                .col1
+                                                   .cont
+                                                      .cont-col1
+                                                         .label.label-sm.label-success
+                                                            i.fa.fa-bell-o
+                                                      .cont-col2
+                                                         .desc
+                                                            | New version v1.4 just lunched!
+                                                .col2
+                                                   .date
+                                                      | 20 mins
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-danger
+                                                         i.fa.fa-bolt
+                                                   .cont-col2
+                                                      .desc
+                                                         | Database server #12 overloaded. Please fix the issue.
+                                             .col2
+                                                .date
+                                                   | 24 mins
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-info
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 30 mins
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-success
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 40 mins
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-warning
+                                                         i.fa.fa-plus
+                                                   .cont-col2
+                                                      .desc
+                                                         | New user registered.
+                                             .col2
+                                                .date
+                                                   | 1.5 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-success
+                                                         i.fa.fa-bell-o
+                                                   .cont-col2
+                                                      .desc
+                                                         | Web server hardware needs to be upgraded.
+                                                         span.label.label-sm.label-default
+                                                            | Overdue
+                                             .col2
+                                                .date
+                                                   | 2 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-default
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 3 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-warning
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 5 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-info
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 18 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-default
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 21 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-info
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 22 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-default
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 21 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-info
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 22 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-default
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 21 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-info
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 22 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-default
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 21 hours
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-info
+                                                         i.fa.fa-bullhorn
+                                                   .cont-col2
+                                                      .desc
+                                                         | New order received. Please take care of it.
+                                             .col2
+                                                .date
+                                                   | 22 hours
+                                 #tab_1_2.tab-pane
+                                    .scroller(style='height: 290px;', data-always-visible='1', data-rail-visible1='1')
+                                       ul.feeds
+                                          li
+                                             a(href='javascript:;')
+                                                .col1
+                                                   .cont
+                                                      .cont-col1
+                                                         .label.label-sm.label-success
+                                                            i.fa.fa-bell-o
+                                                      .cont-col2
+                                                         .desc
+                                                            | New user registered
+                                                .col2
+                                                   .date
+                                                      | Just now
+                                          li
+                                             a(href='javascript:;')
+                                                .col1
+                                                   .cont
+                                                      .cont-col1
+                                                         .label.label-sm.label-success
+                                                            i.fa.fa-bell-o
+                                                      .cont-col2
+                                                         .desc
+                                                            | New order received
+                                                .col2
+                                                   .date
+                                                      | 10 mins
+                                          li
+                                             .col1
+                                                .cont
+                                                   .cont-col1
+                                                      .label.label-sm.label-danger
+                                                         i.fa.fa-bolt
+                                                   .cont-col2
+                                                      .desc
+                                                         | Order #24DOP4 has been rejected.
+                                                         span.label.label-sm.label-danger
+                                                            | Take action
+                                                            i.fa.fa-share
+                                             .col2
+                                                .date
+                                                   | 24 mins
+                                          li
+                                             a(href='javascript:;')
+                                                .col1
+                                                   .cont
+                                                      .cont-col1
+                                                         .label.label-sm.label-success
+                                                            i.fa.fa-bell-o
+                                                      .cont-col2
+                                                         .desc
+                                                            | New user registered
+                                                .col2
+                                                   .date
+                                                      | Just now
+                                          li
+                                             a(href='javascript:;')
+                                                .col1
+                                                   .cont
+                                                      .cont-col1
+                                                         .label.label-sm.label-success
+                                                            i.fa.fa-bell-o
+                                                      .cont-col2
+                                                         .desc
+                                                            | New user registered
+                                                .col2
+                                                   .date
+                                                      | Just now
+                                          li
+                                             a(href='javascript:;')
+                                                .col1
+                                                   .cont
+                                                      .cont-col1
+                                                         .label.label-sm.label-success
+                                                            i.fa.fa-bell-o
+                                                      .cont-col2
+                                                         .desc
+                                                            | New user registered
+                                                .col2
+                                                   .date
+                                                      | Just now
+                                          li
+                                             a(href='javascript:;')
+                                                .col1
+                                                   .cont
+                                                      .cont-col1
+                                                         .label.label-sm.label-success
+                                                            i.fa.fa-bell-o
+                                                      .cont-col2
+                                                         .desc
+                                                            | New user registered
+                                                .col2
+                                                   .date
+                                                      | Just now
+                                          li
+                                             a(href='javascript:;')
+                                                .col1
+                                                   .cont
+                                                      .cont-col1
+                                                         .label.label-sm.label-success
+                                                            i.fa.fa-bell-o
+                                                      .cont-col2
+                                                         .desc
+                                                            | New user registered
+                                                .col2
+                                                   .date
+                                                      | Just now
+                                          li
+                                             a(href='javascript:;')
+                                                .col1
+                                                   .cont
+                                                      .cont-col1
+                                                         .label.label-sm.label-success
+                                                            i.fa.fa-bell-o
+                                                      .cont-col2
+                                                         .desc
+                                                            | New user registered
+                                                .col2
+                                                   .date
+                                                      | Just now
+                                          li
+                                             a(href='javascript:;')
+                                                .col1
+                                                   .cont
+                                                      .cont-col1
+                                                         .label.label-sm.label-success
+                                                            i.fa.fa-bell-o
+                                                      .cont-col2
+                                                         .desc
+                                                            | New user registered
+                                                .col2
+                                                   .date
+                                                      | Just now
+                                 #tab_1_3.tab-pane
+                                    .scroller(style='height: 290px;', data-always-visible='1', data-rail-visible1='1')
+                                       .row
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Robert Nilson
+                                                   span.label.label-sm.label-success.label-mini
+                                                      | Approved
+                                                div
+                                                   | 29 Jan 2013 10:45AM
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Lisa Miller
+                                                   span.label.label-sm.label-info
+                                                      | Pending
+                                                div
+                                                   | 19 Jan 2013 10:45AM
+                                       .row
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Eric Kim
+                                                   span.label.label-sm.label-info
+                                                      | Pending
+                                                div
+                                                   | 19 Jan 2013 12:45PM
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Lisa Miller
+                                                   span.label.label-sm.label-danger
+                                                      | In progress
+                                                div
+                                                   | 19 Jan 2013 11:55PM
+                                       .row
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Eric Kim
+                                                   span.label.label-sm.label-info
+                                                      | Pending
+                                                div
+                                                   | 19 Jan 2013 12:45PM
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Lisa Miller
+                                                   span.label.label-sm.label-danger
+                                                      | In progress
+                                                div
+                                                   | 19 Jan 2013 11:55PM
+                                       .row
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Eric Kim
+                                                   span.label.label-sm.label-info
+                                                      | Pending
+                                                div
+                                                   | 19 Jan 2013 12:45PM
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Lisa Miller
+                                                   span.label.label-sm.label-danger
+                                                      | In progress
+                                                div
+                                                   | 19 Jan 2013 11:55PM
+                                       .row
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Eric Kim
+                                                   span.label.label-sm.label-info
+                                                      | Pending
+                                                div
+                                                   | 19 Jan 2013 12:45PM
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Lisa Miller
+                                                   span.label.label-sm.label-danger
+                                                      | In progress
+                                                div
+                                                   | 19 Jan 2013 11:55PM
+                                       .row
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Eric Kim
+                                                   span.label.label-sm.label-info
+                                                      | Pending
+                                                div
+                                                   | 19 Jan 2013 12:45PM
+                                          .col-md-6.user-info
+                                             img.img-responsive(alt='', src='../../assets/admin/layout/img/avatar.png')
+                                             .details
+                                                div
+                                                   a(href='javascript:;')
+                                                      | Lisa Miller
+                                                   span.label.label-sm.label-danger
+                                                      | In progress
+                                                div
+                                                   | 19 Jan 2013 11:55PM
+                           // END TABS
+                     // END PORTLET
+               .clearfix
+               .row
+                  .col-md-6.col-sm-6
+                     // BEGIN PORTLET
+                     .portlet.box.blue-madison.calendar
+                        .portlet-title
+                           .caption
+                              i.fa.fa-calendar
+                              | Calendar
+                        .portlet-body.light-grey
+                           #calendar
+                     // END PORTLET
+                  .col-md-6.col-sm-6
+                     // BEGIN PORTLET
+                     .portlet
+                        .portlet-title.line
+                           .caption
+                              i.fa.fa-comments
+                              | Chats
+                           .tools
+                              a.collapse(href='')
+                              a.config(href='#portlet-config', data-toggle='modal')
+                              a.reload(href='')
+                              a.fullscreen(href='')
+                              a.remove(href='')
+                        #chats.portlet-body
+                           .scroller(style='height: 435px;', data-always-visible='1', data-rail-visible1='1')
+                              ul.chats
+                                 li.in
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar1.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;')
+                                          | Bob Nilson
+                                       span.datetime
+                                          | at 20:09
+                                       span.body
+                                          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                 li.out
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar2.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;')
+                                          | Lisa Wong
+                                       span.datetime
+                                          | at 20:11
+                                       span.body
+                                          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                 li.in
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar1.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;')
+                                          | Bob Nilson
+                                       span.datetime
+                                          | at 20:30
+                                       span.body
+                                          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                 li.out
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar3.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;')
+                                          | Richard Doe
+                                       span.datetime
+                                          | at 20:33
+                                       span.body
+                                          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                 li.in
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar3.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;')
+                                          | Richard Doe
+                                       span.datetime
+                                          | at 20:35
+                                       span.body
+                                          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                 li.out
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar1.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;')
+                                          | Bob Nilson
+                                       span.datetime
+                                          | at 20:40
+                                       span.body
+                                          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                 li.in
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar3.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;')
+                                          | Richard Doe
+                                       span.datetime
+                                          | at 20:40
+                                       span.body
+                                          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                 li.out
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar1.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;')
+                                          | Bob Nilson
+                                       span.datetime
+                                          | at 20:54
+                                       span.body
+                                          | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. sed diam nonummy nibh euismod tincidunt ut laoreet.
+                           .chat-form
+                              .input-cont
+                                 input.form-control(type='text', placeholder='Type a message here...')
+                              .btn-cont
+                                 span.arrow
+                                 a.btn.blue.icn-only(href='')
+                                    i.fa.fa-check.icon-white
+                     // END PORTLET
+         // END CONTENT
+         // BEGIN QUICK SIDEBAR
+         a.page-quick-sidebar-toggler(href='javascript:;')
+            i.icon-close
+         .page-quick-sidebar-wrapper
+            .page-quick-sidebar
+               .nav-justified
+                  ul.nav.nav-tabs.nav-justified
+                     li.active
+                        a(href='#quick_sidebar_tab_1', data-toggle='tab')
+                           | Users
+                           span.badge.badge-danger 2
+                     li
+                        a(href='#quick_sidebar_tab_2', data-toggle='tab')
+                           | Alerts
+                           span.badge.badge-success 7
+                     li.dropdown
+                        a.dropdown-toggle(href='javascript:;', data-toggle='dropdown')
+                           | More
+                           i.fa.fa-angle-down
+                        ul.dropdown-menu.pull-right(role='menu')
+                           li
+                              a(href='#quick_sidebar_tab_3', data-toggle='tab')
+                                 i.icon-bell
+                                 |  Alerts
+                           li
+                              a(href='#quick_sidebar_tab_3', data-toggle='tab')
+                                 i.icon-info
+                                 |  Notifications
+                           li
+                              a(href='#quick_sidebar_tab_3', data-toggle='tab')
+                                 i.icon-speech
+                                 |  Activities
+                           li.divider
+                           li
+                              a(href='#quick_sidebar_tab_3', data-toggle='tab')
+                                 i.icon-settings
+                                 |  Settings
+                  .tab-content
+                     #quick_sidebar_tab_1.tab-pane.active.page-quick-sidebar-chat
+                        .page-quick-sidebar-chat-users(data-rail-color='#ddd', data-wrapper-class='page-quick-sidebar-list')
+                           h3.list-heading Staff
+                           ul.media-list.list-items
+                              li.media
+                                 .media-status
+                                    span.badge.badge-success 8
+                                 img.media-object(src='../../assets/admin/layout/img/avatar3.jpg', alt='...')
+                                 .media-body
+                                    h4.media-heading Bob Nilson
+                                    .media-heading-sub
+                                       | Project Manager
+                              li.media
+                                 img.media-object(src='../../assets/admin/layout/img/avatar1.jpg', alt='...')
+                                 .media-body
+                                    h4.media-heading Nick Larson
+                                    .media-heading-sub
+                                       | Art Director
+                              li.media
+                                 .media-status
+                                    span.badge.badge-danger 3
+                                 img.media-object(src='../../assets/admin/layout/img/avatar4.jpg', alt='...')
+                                 .media-body
+                                    h4.media-heading Deon Hubert
+                                    .media-heading-sub
+                                       | CTO
+                              li.media
+                                 img.media-object(src='../../assets/admin/layout/img/avatar2.jpg', alt='...')
+                                 .media-body
+                                    h4.media-heading Ella Wong
+                                    .media-heading-sub
+                                       | CEO
+                           h3.list-heading Customers
+                           ul.media-list.list-items
+                              li.media
+                                 .media-status
+                                    span.badge.badge-warning 2
+                                 img.media-object(src='../../assets/admin/layout/img/avatar6.jpg', alt='...')
+                                 .media-body
+                                    h4.media-heading Lara Kunis
+                                    .media-heading-sub
+                                       | CEO, Loop Inc
+                                    .media-heading-small
+                                       | Last seen 03:10 AM
+                              li.media
+                                 .media-status
+                                    span.label.label-sm.label-success new
+                                 img.media-object(src='../../assets/admin/layout/img/avatar7.jpg', alt='...')
+                                 .media-body
+                                    h4.media-heading Ernie Kyllonen
+                                    .media-heading-sub
+                                       | Project Manager,
+                                       br
+                                       | 											 SmartBizz PTL
+                              li.media
+                                 img.media-object(src='../../assets/admin/layout/img/avatar8.jpg', alt='...')
+                                 .media-body
+                                    h4.media-heading Lisa Stone
+                                    .media-heading-sub
+                                       | CTO, Keort Inc
+                                    .media-heading-small
+                                       | Last seen 13:10 PM
+                              li.media
+                                 .media-status
+                                    span.badge.badge-success 7
+                                 img.media-object(src='../../assets/admin/layout/img/avatar9.jpg', alt='...')
+                                 .media-body
+                                    h4.media-heading Deon Portalatin
+                                    .media-heading-sub
+                                       | CFO, H&D LTD
+                              li.media
+                                 img.media-object(src='../../assets/admin/layout/img/avatar10.jpg', alt='...')
+                                 .media-body
+                                    h4.media-heading Irina Savikova
+                                    .media-heading-sub
+                                       | CEO, Tizda Motors Inc
+                              li.media
+                                 .media-status
+                                    span.badge.badge-danger 4
+                                 img.media-object(src='../../assets/admin/layout/img/avatar11.jpg', alt='...')
+                                 .media-body
+                                    h4.media-heading Maria Gomez
+                                    .media-heading-sub
+                                       | Manager, Infomatic Inc
+                                    .media-heading-small
+                                       | Last seen 03:10 AM
+                        .page-quick-sidebar-item
+                           .page-quick-sidebar-chat-user
+                              .page-quick-sidebar-nav
+                                 a.page-quick-sidebar-back-to-list(href='javascript:;')
+                                    i.icon-arrow-left
+                                    | Back
+                              .page-quick-sidebar-chat-user-messages
+                                 .post.out
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar3.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;') Bob Nilson
+                                       span.datetime 20:15
+                                       span.body
+                                          | When could you send me the report ?
+                                 .post.in
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar2.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;') Ella Wong
+                                       span.datetime 20:15
+                                       span.body
+                                          | Its almost done. I will be sending it shortly
+                                 .post.out
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar3.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;') Bob Nilson
+                                       span.datetime 20:15
+                                       span.body
+                                          | Alright. Thanks! :)
+                                 .post.in
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar2.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;') Ella Wong
+                                       span.datetime 20:16
+                                       span.body
+                                          | You are most welcome. Sorry for the delay.
+                                 .post.out
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar3.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;') Bob Nilson
+                                       span.datetime 20:17
+                                       span.body
+                                          | No probs. Just take your time :)
+                                 .post.in
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar2.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;') Ella Wong
+                                       span.datetime 20:40
+                                       span.body
+                                          | Alright. I just emailed it to you.
+                                 .post.out
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar3.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;') Bob Nilson
+                                       span.datetime 20:17
+                                       span.body
+                                          | Great! Thanks. Will check it right away.
+                                 .post.in
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar2.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;') Ella Wong
+                                       span.datetime 20:40
+                                       span.body
+                                          | Please let me know if you have any comment.
+                                 .post.out
+                                    img.avatar(alt='', src='../../assets/admin/layout/img/avatar3.jpg')
+                                    .message
+                                       span.arrow
+                                       a.name(href='javascript:;') Bob Nilson
+                                       span.datetime 20:17
+                                       span.body
+                                          | Sure. I will check and buzz you if anything needs to be corrected.
+                              .page-quick-sidebar-chat-user-form
+                                 .input-group
+                                    input.form-control(type='text', placeholder='Type a message here...')
+                                    .input-group-btn
+                                       button.btn.blue(type='button')
+                                          i.icon-paper-clip
+                     #quick_sidebar_tab_2.tab-pane.page-quick-sidebar-alerts
+                        .page-quick-sidebar-alerts-list
+                           h3.list-heading General
+                           ul.feeds.list-items
+                              li
+                                 .col1
+                                    .cont
+                                       .cont-col1
+                                          .label.label-sm.label-info
+                                             i.fa.fa-check
+                                       .cont-col2
+                                          .desc
+                                             | You have 4 pending tasks.
+                                             span.label.label-sm.label-warning
+                                                | Take action
+                                                i.fa.fa-share
+                                 .col2
+                                    .date
+                                       | Just now
+                              li
+                                 a(href='javascript:;')
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-success
+                                                i.fa.fa-bar-chart-o
+                                          .cont-col2
+                                             .desc
+                                                | Finance Report for year 2013 has been released.
+                                    .col2
+                                       .date
+                                          | 20 mins
+                              li
+                                 .col1
+                                    .cont
+                                       .cont-col1
+                                          .label.label-sm.label-danger
+                                             i.fa.fa-user
+                                       .cont-col2
+                                          .desc
+                                             | You have 5 pending membership that requires a quick review.
+                                 .col2
+                                    .date
+                                       | 24 mins
+                              li
+                                 .col1
+                                    .cont
+                                       .cont-col1
+                                          .label.label-sm.label-info
+                                             i.fa.fa-shopping-cart
+                                       .cont-col2
+                                          .desc
+                                             | New order received with
+                                             span.label.label-sm.label-success
+                                                | Reference Number: DR23923
+                                 .col2
+                                    .date
+                                       | 30 mins
+                              li
+                                 .col1
+                                    .cont
+                                       .cont-col1
+                                          .label.label-sm.label-success
+                                             i.fa.fa-user
+                                       .cont-col2
+                                          .desc
+                                             | You have 5 pending membership that requires a quick review.
+                                 .col2
+                                    .date
+                                       | 24 mins
+                              li
+                                 .col1
+                                    .cont
+                                       .cont-col1
+                                          .label.label-sm.label-info
+                                             i.fa.fa-bell-o
+                                       .cont-col2
+                                          .desc
+                                             | Web server hardware needs to be upgraded.
+                                             span.label.label-sm.label-warning
+                                                | Overdue
+                                 .col2
+                                    .date
+                                       | 2 hours
+                              li
+                                 a(href='javascript:;')
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-default
+                                                i.fa.fa-briefcase
+                                          .cont-col2
+                                             .desc
+                                                | IPO Report for year 2013 has been released.
+                                    .col2
+                                       .date
+                                          | 20 mins
+                           h3.list-heading System
+                           ul.feeds.list-items
+                              li
+                                 .col1
+                                    .cont
+                                       .cont-col1
+                                          .label.label-sm.label-info
+                                             i.fa.fa-check
+                                       .cont-col2
+                                          .desc
+                                             | You have 4 pending tasks.
+                                             span.label.label-sm.label-warning
+                                                | Take action
+                                                i.fa.fa-share
+                                 .col2
+                                    .date
+                                       | Just now
+                              li
+                                 a(href='javascript:;')
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-danger
+                                                i.fa.fa-bar-chart-o
+                                          .cont-col2
+                                             .desc
+                                                | Finance Report for year 2013 has been released.
+                                    .col2
+                                       .date
+                                          | 20 mins
+                              li
+                                 .col1
+                                    .cont
+                                       .cont-col1
+                                          .label.label-sm.label-default
+                                             i.fa.fa-user
+                                       .cont-col2
+                                          .desc
+                                             | You have 5 pending membership that requires a quick review.
+                                 .col2
+                                    .date
+                                       | 24 mins
+                              li
+                                 .col1
+                                    .cont
+                                       .cont-col1
+                                          .label.label-sm.label-info
+                                             i.fa.fa-shopping-cart
+                                       .cont-col2
+                                          .desc
+                                             | New order received with
+                                             span.label.label-sm.label-success
+                                                | Reference Number: DR23923
+                                 .col2
+                                    .date
+                                       | 30 mins
+                              li
+                                 .col1
+                                    .cont
+                                       .cont-col1
+                                          .label.label-sm.label-success
+                                             i.fa.fa-user
+                                       .cont-col2
+                                          .desc
+                                             | You have 5 pending membership that requires a quick review.
+                                 .col2
+                                    .date
+                                       | 24 mins
+                              li
+                                 .col1
+                                    .cont
+                                       .cont-col1
+                                          .label.label-sm.label-warning
+                                             i.fa.fa-bell-o
+                                       .cont-col2
+                                          .desc
+                                             | Web server hardware needs to be upgraded.
+                                             span.label.label-sm.label-default
+                                                | Overdue
+                                 .col2
+                                    .date
+                                       | 2 hours
+                              li
+                                 a(href='javascript:;')
+                                    .col1
+                                       .cont
+                                          .cont-col1
+                                             .label.label-sm.label-info
+                                                i.fa.fa-briefcase
+                                          .cont-col2
+                                             .desc
+                                                | IPO Report for year 2013 has been released.
+                                    .col2
+                                       .date
+                                          | 20 mins
+                     #quick_sidebar_tab_3.tab-pane.page-quick-sidebar-settings
+                        .page-quick-sidebar-settings-list
+                           h3.list-heading General Settings
+                           ul.list-items.borderless
+                              li
+                                 | Enable Notifications
+                                 input.make-switch(type='checkbox', checked='', data-size='small', data-on-color='success', data-on-text='ON', data-off-color='default', data-off-text='OFF')
+                              li
+                                 | Allow Tracking
+                                 input.make-switch(type='checkbox', data-size='small', data-on-color='info', data-on-text='ON', data-off-color='default', data-off-text='OFF')
+                              li
+                                 | Log Errors
+                                 input.make-switch(type='checkbox', checked='', data-size='small', data-on-color='danger', data-on-text='ON', data-off-color='default', data-off-text='OFF')
+                              li
+                                 | Auto Sumbit Issues
+                                 input.make-switch(type='checkbox', data-size='small', data-on-color='warning', data-on-text='ON', data-off-color='default', data-off-text='OFF')
+                              li
+                                 | Enable SMS Alerts
+                                 input.make-switch(type='checkbox', checked='', data-size='small', data-on-color='success', data-on-text='ON', data-off-color='default', data-off-text='OFF')
+                           h3.list-heading System Settings
+                           ul.list-items.borderless
+                              li
+                                 | Security Level
+                                 select.form-control.input-inline.input-sm.input-small
+                                    option(value='1') Normal
+                                    option(value='2', selected='') Medium
+                                    option(value='e') High
+                              li
+                                 | Failed Email Attempts
+                                 input.form-control.input-inline.input-sm.input-small(value='5')
+                              li
+                                 | Secondary SMTP Port
+                                 input.form-control.input-inline.input-sm.input-small(value='3560')
+                              li
+                                 | Notify On System Error
+                                 input.make-switch(type='checkbox', checked='', data-size='small', data-on-color='danger', data-on-text='ON', data-off-color='default', data-off-text='OFF')
+                              li
+                                 | Notify On SMTP Error
+                                 input.make-switch(type='checkbox', checked='', data-size='small', data-on-color='warning', data-on-text='ON', data-off-color='default', data-off-text='OFF')
+                           .inner-content
+                              button.btn.btn-success
+                                 i.icon-settings
+                                 |  Save Changes
+         // END QUICK SIDEBAR
+      // END CONTAINER
+      // BEGIN FOOTER
+      .page-footer
+         .page-footer-inner
+            | 2014 © Metronic by keenthemes.
+         .scroll-to-top
+            i.icon-arrow-up
+      // END FOOTER
+      // BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time)
+      // BEGIN CORE PLUGINS
+      //if lt IE 9
+        script(src='../../assets/global/plugins/respond.min.js')
+        script(src='../../assets/global/plugins/excanvas.min.js')
+      script(src='../../assets/global/plugins/jquery.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jquery-migrate.min.js', type='text/javascript')
+      // IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip
+      script(src='../../assets/global/plugins/jquery-ui/jquery-ui.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/bootstrap/js/bootstrap.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jquery.blockui.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jquery.cokie.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/uniform/jquery.uniform.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js', type='text/javascript')
+      // END CORE PLUGINS
+      // BEGIN PAGE LEVEL PLUGINS
+      script(src='../../assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js', type='text/javascript')
+      script(src='../../assets/global/plugins/flot/jquery.flot.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/flot/jquery.flot.resize.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/flot/jquery.flot.categories.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jquery.pulsate.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/bootstrap-daterangepicker/moment.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js', type='text/javascript')
+      // IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support
+      script(src='../../assets/global/plugins/fullcalendar/fullcalendar.min.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jquery-easypiechart/jquery.easypiechart.js', type='text/javascript')
+      script(src='../../assets/global/plugins/jquery.sparkline.min.js', type='text/javascript')
+      // END PAGE LEVEL PLUGINS
+      // BEGIN PAGE LEVEL SCRIPTS
+      script(src='../../assets/global/scripts/metronic.js', type='text/javascript')
+      script(src='../../assets/admin/layout/scripts/layout.js', type='text/javascript')
+      script(src='../../assets/admin/layout/scripts/quick-sidebar.js', type='text/javascript')
+      script(src='../../assets/admin/layout/scripts/demo.js', type='text/javascript')
+      script(src='../../assets/admin/pages/scripts/index.js', type='text/javascript')
+      script(src='../../assets/admin/pages/scripts/tasks.js', type='text/javascript')
+      // END PAGE LEVEL SCRIPTS
+      script.
+         jQuery(document).ready(function() {
+            Metronic.init(); // init metronic core components
+            Layout.init(); // init current layout
+            QuickSidebar.init(); // init quick sidebar
+            Demo.init(); // init demo features // initlayout and core plugins
+            Index.init();
+            Index.initJQVMAP(); // init index page's custom scripts
+            Index.initCalendar(); // init index page's custom scripts
+            Index.initCharts(); // init index page's custom scripts
+            Index.initChat();
+            Index.initMiniCharts();
+            Index.initDashboardDaterange();
+            Tasks.initDashboardWidget();
+         });
+      // END JAVASCRIPTS
+   // END BODY
+
